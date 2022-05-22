@@ -10,9 +10,9 @@ source:
   sha256: b2c31671e723378a99e4996205c5deb41dd85e10349cce0013be67e098ba2660
 
 build:
-  skip: true  # [py2k]
+  noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 1
+  number: 2
 
 requirements:
   host:
