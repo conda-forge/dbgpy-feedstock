@@ -1,5 +1,5 @@
 {% set name = "dbgpy" %}
-{% set version = "0.1.7" %}
+{% set version = "0.2.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/dbgpy-{{ version }}.tar.gz
-  sha256: b2c31671e723378a99e4996205c5deb41dd85e10349cce0013be67e098ba2660
+  sha256: 7939ad6c1e88f30d2a63953ba965d2098abdbac3b9f6662b9e154d5d8bd1df8e
 
 build:
   skip: true  # [py2k]
   script: {{ PYTHON }} -m pip install . -vv
-  number: 4
+  number: 0
 
 requirements:
   build:
